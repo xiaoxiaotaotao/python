@@ -1,3 +1,9 @@
+# 导入库
+import cv2
+# 加载人脸模型
+face = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
+# 打开摄像头
+capture = cv2.VideoCapture(0)
 # 创建窗口
 cv2.namedWindow("taoshukai hen shuai")
 # 获取摄像头实时画面
